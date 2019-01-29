@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "M";
+const prefix = "5";
 /////////////////////////
 ////////////////////////
 
@@ -313,10 +313,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'Mhelp') {
+    if (message.content === '5help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (M)**')
+        .setDescription('**برفكس البوت (5)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -329,8 +329,8 @@ client.on('message', message => {
     }
 });
 
-const adminprefix = "1";
-const devs = ['307779712258670593'];
+const adminprefix = "5";
+const devs = ['487313531071496195'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -361,7 +361,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Diamond Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`MJD Music | Mhelp `)//حقوق دايموند كودز
+client.user.setGame(`Chicago | Music 5 `)//حقوق دايموند كودز
 client.user.setStatus("online")
 });
 
